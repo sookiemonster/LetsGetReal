@@ -9,7 +9,7 @@ public class RealNumber {
     return value;
   }
 
-  public Stromg toString() {
+  public String toString() {
     return "" + getValue();
   }
 }
