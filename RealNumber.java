@@ -21,4 +21,9 @@ public class RealNumber {
   public static double percentDifference(double a, double b) {
     return (Math.abs(a - b) / (( a + b ) / 2)) * 100;
   }
+
+  public RealNumber add(RealNumber other) {
+    RealNumber x = new RealNumber(this.getValue() + other.getValue());
+    return x;
+  }
 }

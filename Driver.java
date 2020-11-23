@@ -8,8 +8,11 @@ public class Driver {
     System.out.println(a.getValue());
     System.out.println(RealNumber.percentDifference(5,7));
     System.out.println(RealNumber.percentDifference(2,2.2422425252));
-    
+
     System.out.println(a.equals(b)); // Should return true
     System.out.println(a.equals(c)); // Should return false
+
+    System.out.println(a.add(b));
+    System.out.println(a.add(c));
   }
 }
