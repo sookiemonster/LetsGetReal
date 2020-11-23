@@ -74,5 +74,12 @@ public class Driver {
     System.out.println(n4);
     System.out.println(n5);
 
+    // System.out.println();
+    // System.out.println("2: " + RationalNumber.gcd(4, 2));
+    // System.out.println("1: " + RationalNumber.gcd(4, 3));
+    // System.out.println("20: " + RationalNumber.gcd(20, 40));
+    // System.out.println("5: " + RationalNumber.gcd(10, 15));
+    // System.out.println("0: " + RationalNumber.gcd(0, 2));
+    // System.out.println("1: " + RationalNumber.gcd(1, 2));
   }
 }
