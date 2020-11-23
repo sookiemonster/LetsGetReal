@@ -81,5 +81,30 @@ public class Driver {
     // System.out.println("5: " + RationalNumber.gcd(10, 15));
     // System.out.println("0: " + RationalNumber.gcd(0, 2));
     // System.out.println("1: " + RationalNumber.gcd(1, 2));
+
+    RationalNumber n6 = new RationalNumber(1, -2);
+    System.out.println();
+    System.out.println("Should be 2/1: "  + n1);
+    System.out.println("Should be -1/2: " + n6);
+    System.out.println("Should be -2/1: " + n6.reciprocal());
+
+    RationalNumber n7 = new RationalNumber(-3, 2);
+    System.out.println("-3/2: "+ n7);
+
+    RationalNumber n8 = new RationalNumber(6, -4);
+    System.out.println("-3/2: "+ n8);
+
+    RationalNumber n9 = new RationalNumber(-6, -4);
+    System.out.println("3/2: "+ n9);
+
+    RationalNumber n10 = new RationalNumber(-1200, -600);
+    System.out.println("2/1: "+ n10);
+
+    RationalNumber n11 = new RationalNumber(-42, -94);
+    System.out.println("21/47: "+ n11);
+
+    RationalNumber n12 = new RationalNumber(42, -94);
+    System.out.println("-21/47: "+ n12);
+
   }
 }

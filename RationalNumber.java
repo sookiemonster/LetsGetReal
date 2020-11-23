@@ -9,6 +9,18 @@ public class RationalNumber extends RealNumber {
     } else {
       numerator = nume;
       denominator = deno;
+      reduce();
+      swapNegative();
+    }
+  }
+
+  private void swapNegative() {
+    if (this.getNumerator() < 0 && this.getDenominator() < 0) {
+      numerator = Math.abs(this.getNumerator());
+      denominator = Math.abs(this.getDenominator());
+    } else if (this.getDenominator() < 0) {
+      numerator = this.getNumerator() * -1;
+      denominator = Math.abs(this.getDenominator());
     }
   }
 
@@ -40,7 +52,7 @@ public class RationalNumber extends RealNumber {
   private static int gcd(int a, int b) {
     if (a == 0 || b == 0) {
       return 0;
-    } else if (a < b) {
+    } else if (Math.abs(a) < Math.abs(b)) {
       int temp = a;
       a = b;
       b = temp;
@@ -51,8 +63,14 @@ public class RationalNumber extends RealNumber {
     while (remainder != 0) {
       dividend = divisor;
       divisor = remainder;
-      remainder = divisor % remainder;
+      remainder = dividend % remainder;
     }
     return divisor;
+  }
+
+  private void reduce() {
+    int temp = gcd(this.getNumerator(), this.getDenominator());
+    numerator = this.getNumerator() / temp;
+    denominator = this.getDenominator() / temp;
   }
 }
