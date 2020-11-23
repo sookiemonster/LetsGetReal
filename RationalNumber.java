@@ -28,4 +28,8 @@ public class RationalNumber extends RealNumber {
     RationalNumber x = new RationalNumber(this.denominator, this.numerator);
     return x;
   }
+
+  public boolean equals(RationalNumber other) {
+    return this.getNumerator() == other.getNumerator() && this.getDenominator() == other.getDenominator();
+  }
 }

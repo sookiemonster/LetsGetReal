@@ -43,6 +43,8 @@ public class Driver {
     RationalNumber n1 = new RationalNumber(4, 2);
     RationalNumber n2 = new RationalNumber(1, 2);
     RationalNumber n3 = n1.reciprocal();
+    RationalNumber n4 = new RationalNumber(2, 1);
+    RationalNumber n5 = n4.reciprocal();
 
     System.out.println();
     System.out.println(n1);
@@ -59,5 +61,11 @@ public class Driver {
     System.out.println();
     System.out.println(n3.getNumerator());
     System.out.println(n3.getDenominator());
+
+    System.out.println();
+    System.out.println(n2.equals(n3));
+    System.out.println(n2.equals(n5));
+    System.out.println(n2.equals(n4));
+
   }
 }
