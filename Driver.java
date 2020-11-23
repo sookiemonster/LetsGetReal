@@ -41,7 +41,9 @@ public class Driver {
     System.out.println("Rational Number Tests");
     System.out.println();
     RationalNumber n1 = new RationalNumber(4, 2);
+    RationalNumber n2 = new RationalNumber(1, 2);
 
     System.out.println(n1);
+    System.out.println(n2);
   }
 }
