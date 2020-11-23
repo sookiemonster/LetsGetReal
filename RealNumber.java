@@ -14,9 +14,9 @@ public class RealNumber {
   }
 
   public boolean equals(RealNumber other) {
-    double diff = 0;
-    return true;
-  }
+    double diff = percentDifference(this.getValue(), other.getValue());
+    return diff < 0.001;
+    }
 
   public static double percentDifference(double a, double b) {
     return (Math.abs(a - b) / (( a + b ) / 2)) * 100;
