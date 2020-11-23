@@ -16,15 +16,24 @@ public class Driver {
     System.out.println(a.equals(b)); // Should return true
     System.out.println(a.equals(c)); // Should return false
 
+    System.out.println();
     System.out.println(a.add(b));
     System.out.println(a.add(c));
 
+    System.out.println();
     System.out.println(a.multiply(b));
     System.out.println(d.multiply(e));
 
+    System.out.println();
     System.out.println(a.divide(b));
     System.out.println(d.divide(e));
     System.out.println(d.divide(f));
     System.out.println(d.divide(g));
+
+    System.out.println();
+    System.out.println(c.subtract(a));
+    System.out.println(g.subtract(f));
+    System.out.println(d.subtract(f));
+    System.out.println(f.subtract(d));
   }
 }
