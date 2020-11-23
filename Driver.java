@@ -35,5 +35,13 @@ public class Driver {
     System.out.println(g.subtract(f));
     System.out.println(d.subtract(f));
     System.out.println(f.subtract(d));
+
+    // RationalNumber ====================================
+    System.out.println();
+    System.out.println("Rational Number Tests");
+    System.out.println();
+    RationalNumber n1 = new RationalNumber(4, 2);
+
+    System.out.println(n1);
   }
 }
