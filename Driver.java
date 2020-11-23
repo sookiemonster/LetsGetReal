@@ -3,6 +3,8 @@ public class Driver {
     RealNumber a = new RealNumber(1.0);
     RealNumber b = new RealNumber(1.0);
     RealNumber c = new RealNumber(1.0000234254);
+    RealNumber d = new RealNumber(-42);
+    RealNumber e = new RealNumber(2);
 
     System.out.println(a);
     System.out.println(a.getValue());
@@ -14,5 +16,8 @@ public class Driver {
 
     System.out.println(a.add(b));
     System.out.println(a.add(c));
+
+    System.out.println(a.multiply(b));
+    System.out.println(d.multiply(e));
   }
 }
