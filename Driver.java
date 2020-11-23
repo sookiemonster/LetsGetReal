@@ -106,5 +106,7 @@ public class Driver {
     RationalNumber n12 = new RationalNumber(42, -94);
     System.out.println("-21/47: "+ n12);
 
+    System.out.println("3/1: " + n7.divide(n6));
+    System.out.println("-7/23: " + n11.divide(n7));
   }
 }
