@@ -95,4 +95,10 @@ public class RationalNumber extends RealNumber {
     RationalNumber x = new RationalNumber (numeratorSum, commonDenominator);
     return x;
   }
+
+  public RationalNumber subtract(RationalNumber other) {
+    RationalNumber invert = new RationalNumber(-1, 1);
+    RationalNumber y = this.add(other.multiply(invert));
+    return y;
+  }
 }

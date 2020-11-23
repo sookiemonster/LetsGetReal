@@ -120,7 +120,11 @@ public class Driver {
     System.out.println("0/1: " + n13.multiply(n6));
 
     System.out.println("Addition tests: ");
-    System.out.println("-1/1: " + n6.add(n6));
-    System.out.println("3/2: " + n6.add(n10));
+    System.out.println("-1/1: " + n6.add(n6)); // -1/2 + (-1/2)
+    System.out.println("3/2: " + n6.add(n10)); // -1/2 + (2/1)
+
+    System.out.println("Subtraction tests: ");
+    System.out.println("0/1: " + n6.subtract(n6)); // -1/2 - (-1/2)
+    System.out.println("-5/2: " + n6.subtract(n10)); // -1/2 - (2/1)
   }
 }
