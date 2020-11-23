@@ -106,7 +106,17 @@ public class Driver {
     RationalNumber n12 = new RationalNumber(42, -94);
     System.out.println("-21/47: "+ n12);
 
+    System.out.println("Division tests: ");
+    RationalNumber n13 = new RationalNumber(2, 0);
     System.out.println("3/1: " + n7.divide(n6));
-    System.out.println("-7/23: " + n11.divide(n7));
+    System.out.println("-14/47: " + n11.divide(n7));
+    System.out.println("0/1: " + n11.divide(n13));
+
+    System.out.println("Multiplication tests: ");
+    System.out.println("3/4: " + n7.multiply(n6));
+    System.out.println("1/4: " + n6.multiply(n6));
+
+    System.out.println(n13);
+    System.out.println("0/1: " + n13.multiply(n6));
   }
 }
