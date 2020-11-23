@@ -67,5 +67,12 @@ public class Driver {
     System.out.println(n2.equals(n5));
     System.out.println(n2.equals(n4));
 
+    System.out.println();
+    System.out.println(n1);
+    System.out.println(n2);
+    System.out.println(n3);
+    System.out.println(n4);
+    System.out.println(n5);
+
   }
 }
