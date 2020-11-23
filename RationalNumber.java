@@ -78,15 +78,21 @@ public class RationalNumber extends RealNumber {
   }
 
   public RationalNumber multiply(RationalNumber other) {
-    int tempNumerator = this.getNumerator() * other.getNumerator();
-    int tempDenominator = this.getDenominator() * other.getDenominator();
-    RationalNumber x = new RationalNumber(tempNumerator, tempDenominator);
+    RationalNumber x = new RationalNumber(this.getNumerator() * other.getNumerator(),
+                                          this.getDenominator() * other.getDenominator());
     return x;
   }
-
 
   public RationalNumber divide(RationalNumber other) {
     RationalNumber y = this.multiply(other.reciprocal());
     return y;
+  }
+
+  public RationalNumber add(RationalNumber other) {
+    int commonDenominator = this.getDenominator() * other.getDenominator();
+    int numeratorSum = (this.getNumerator() * other.getDenominator() ) +
+                       (other.getNumerator() * this.getDenominator() );
+    RationalNumber x = new RationalNumber (numeratorSum, commonDenominator);
+    return x;
   }
 }
