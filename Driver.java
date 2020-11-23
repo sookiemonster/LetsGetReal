@@ -42,14 +42,22 @@ public class Driver {
     System.out.println();
     RationalNumber n1 = new RationalNumber(4, 2);
     RationalNumber n2 = new RationalNumber(1, 2);
+    RationalNumber n3 = n1.reciprocal();
 
+    System.out.println();
     System.out.println(n1);
     System.out.println(n2);
 
+    System.out.println();
     System.out.println(n1.getNumerator());
     System.out.println(n1.getDenominator());
 
+    System.out.println();
     System.out.println(n2.getNumerator());
     System.out.println(n2.getDenominator());
+
+    System.out.println();
+    System.out.println(n3.getNumerator());
+    System.out.println(n3.getDenominator());
   }
 }
