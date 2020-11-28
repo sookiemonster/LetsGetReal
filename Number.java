@@ -9,7 +9,7 @@ public abstract class Number {
     return diff < 0.001;
     }
 
-  public static double percentDifference(double a, double b) {
+  private static double percentDifference(double a, double b) {
     return (Math.abs(a - b) / (( a + b ) / 2)) * 100;
   }
 }
