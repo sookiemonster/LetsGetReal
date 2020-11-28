@@ -131,11 +131,21 @@ public class Driver {
     RealNumber num3 = new RealNumber(0.000);
     RealNumber num4 = new RealNumber(1.1);
     RealNumber num5 = new RealNumber(-1.0);
+    RealNumber num6 = new RealNumber(1.0);
+    RealNumber num7 = new RealNumber(-2.0);
     System.out.println(num3);
     System.out.println("Should be false: " + num.equals(num2));
     System.out.println("Should be true: " + num.equals(num3));
     System.out.println("Should be false: " + num2.equals(num3));
     System.out.println("Should be false: " + num2.equals(num4));
     System.out.println("Should be false: " + num2.equals(num5));
+    System.out.println();
+    // COMPARE TO
+    System.out.println("-1: " + num.compareTo(num2));
+    System.out.println("1: " + num2.compareTo(num));
+    System.out.println("-1: " + num5.compareTo(num));
+    System.out.println("0: " + num.compareTo(num3));
+    System.out.println("0: " + num2.compareTo(num6));
+    System.out.println("-1: " + num7.compareTo(num5));
   }
 }
