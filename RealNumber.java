@@ -1,7 +1,8 @@
-public class RealNumber {
+public class RealNumber extends Number {
   private double value;
 
   public RealNumber(double v) {
+    super();
     value = v;
   }
 
@@ -11,15 +12,6 @@ public class RealNumber {
 
   public String toString() {
     return "" + getValue();
-  }
-
-  public boolean equals(RealNumber other) {
-    double diff = percentDifference(this.getValue(), other.getValue());
-    return diff < 0.001;
-    }
-
-  public static double percentDifference(double a, double b) {
-    return (Math.abs(a - b) / (( a + b ) / 2)) * 100;
   }
 
   public RealNumber add(RealNumber other) {

@@ -10,8 +10,6 @@ public class Driver {
 
     System.out.println(a);
     System.out.println(a.getValue());
-    System.out.println(RealNumber.percentDifference(5,7));
-    System.out.println(RealNumber.percentDifference(2,2.2422425252));
 
     System.out.println(a.equals(b)); // Should return true
     System.out.println(a.equals(c)); // Should return false
@@ -126,5 +124,18 @@ public class Driver {
     System.out.println("Subtraction tests: ");
     System.out.println("0/1: " + n6.subtract(n6)); // -1/2 - (-1/2)
     System.out.println("-5/2: " + n6.subtract(n10)); // -1/2 - (2/1)
+
+    // ABSTRACT TESTING
+    RealNumber num = new RealNumber(0.0);
+    RealNumber num2 = new RealNumber(1.0);
+    RealNumber num3 = new RealNumber(0.000);
+    RealNumber num4 = new RealNumber(1.1);
+    RealNumber num5 = new RealNumber(-1.0);
+    System.out.println(num3);
+    System.out.println("Should be false: " + num.equals(num2));
+    System.out.println("Should be true: " + num.equals(num3));
+    System.out.println("Should be false: " + num2.equals(num3));
+    System.out.println("Should be false: " + num2.equals(num4));
+    System.out.println("Should be false: " + num2.equals(num5));
   }
 }
